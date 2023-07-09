@@ -1,0 +1,229 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+               #topbar{
+                  background-color: hwb(228 1% 57%);
+                  list-style: none;
+                  padding: 20px;
+                  justify-content: space-around;
+                  text-align: center ;
+                  color: white;
+               }
+                  .items {
+                display: inline;
+            }
+            .section{
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px; 
+                padding-inline-start: 40px;
+                text-align:adjust;
+            }
+            .image-item{
+                width: 300px;
+                height: 300px;
+
+            }
+            .caption{
+                font-size: 24px;
+                margin-top: 8px;
+            }
+            #wrapper{
+                background-color: white;
+                border: 10px ;
+                padding: 0px;
+                margin-top: 0px;
+            }
+            .section-two{
+                text-align: auto;
+                padding: 30px;
+                padding-bottom: 2px;
+                font-size: 15px;
+            }
+            form {
+                background-color: white;
+                border: 1px solid #ccc;
+                width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+
+            }
+            .social-icon{
+                Width: 50px;
+                height: 50px;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+            .input-box{
+                font-size: 18px;
+                padding-bottom: 12px;
+                margin-bottom: 36px;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                border-bottom: 1px solid #ccc;
+                width: 100%;
+            }
+            #form-heading {
+                       text-align: center;
+                       font-size: 24px ;
+                       padding-top: 56px;
+                       padding-bottom: 32px;
+                    }
+             #btn-submit{
+                        background-color:blue;
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        padding-left: 24px;
+                        padding-right: 24px;
+                        margin-bottom: 36px;
+                        font-size: 18px;
+                        border: none;
+                        color: #f2f6ff;
+                    }
+                   #input-wrapper{
+                    padding-top: 80px;
+                    padding-bottom:40px ;
+                    padding-left: 80px;
+                    padding-right: 80px;
+                    width:70%;
+                    text-align: center;
+                    border: 0 solid white;
+                   }
+        </style>
+    </head>
+    <body style="background-color: lightgray;">
+      <div style="padding-bottom: 0px;">  
+        <ul id="topbar">
+            <li class="items"><a href="final project.html">HOME</a></li>
+            <li class="items"><a href="final project.html#second-section">TRIPS</a></li>
+            <li class="items"><a href="about.html#">ABOUT</a></li>
+            <li class="items"><a href="register.html">CONTACTS</a></li>
+        </ul>
+      </div>
+        <div id="first-section" class="section-two" style="padding: 0px;"><img style="height:600px; width: 100%;" src="data:image/png;base64,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"/></div>
+         <div id="second-section" class="section-two" ><h1 class="section-heading" style="text-align: center;">Beautiful places in EGYPT </h1>
+            <table style="text-align: center; margin-right: auto; margin-left: auto;">
+                <tr>
+                    <td>
+                        <div>
+                            <img class="image-item" src="https://www.touropia.com/gfx/d/true-pyramids-of-the-world/giza_necropolis.jpg" alt="Pyramids of Giza" />
+                            <div id="wrapper">  <p class="caption"><a href="https://egymonuments.gov.eg/archaeological-sites/giza-plateau/"><p>Giza Necropolis</p></a>
+                           </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img class="image-item" src="https://www.touropia.com/gfx/d/hot-air-balloon-rides/luxor.jpg" alt="Luxor" />
+                            <div id="wrapper"> <p class="caption"><a href="https://www.memphistours.co.uk/Egypt/Egypt-Travel-Guide/Egypt-Nile-Valley/wiki/Luxor-City-Egypt"><p>Luxor</p></a>
+                           </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img class="image-item" src="https://www.touropia.com/gfx/d/best-places-to-visit-in-egypt/cairo.jpg" alt="Cairo" />
+                            <div id="wrapper"> <p class="caption"><a href="https://www.traveltoegypt.net/discover-egypt/cairo-attractions/cairo-city"><p> Cairo</p></a>
+                            </div>
+                        </div>
+                    </td>
+    
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img class="image-item" src="https://www.touropia.com/gfx/d/best-places-to-visit-in-egypt/aswan.jpg" alt="Aswan" />
+                            <div id="wrapper">  <p class="caption"><a href="https://www.traveltoegypt.net/discover-egypt/aswan-attractions/aswan-information"><p>Aswan</p></a>
+                            </div>
+                        </div>
+    
+                    </td>
+                    <td>
+                        <div>
+                            <img class="image-item" src="https://www.touropia.com/gfx/d/best-places-to-visit-in-egypt/sharm_el_sheikh.jpg" alt="Sharm el-Sheikh" />
+                            <div id="wrapper">   <p class="caption"><a href="https://www.getyourguide.com/-l408/?cmp=ga&cq_src=google_ads&cq_cmp=6658515965&cq_con=84685511891&cq_term=sharm%20el%20sheikh&cq_med=&cq_plac=&cq_net=g&cq_pos=&cq_plt=gp&campaign_id=6658515965&adgroup_id=84685511891&target_id=kwd-17468792&loc_physical_ms=9112460&match_type=e&ad_id=388196924591&keyword=sharm%20el%20sheikh&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gclid=Cj0KCQjwtamlBhD3ARIsAARoaExwUm7rTgsSBVNYwYCI8FCqlRGMev3POB3kSDzD2TNlebEdD5xD72kaAq_VEALw_wcB"><p>Sharm el-Sheikh</p></a>
+                            </div>
+                        </div>
+    
+                    </td><td>
+                        <div>
+                            <img class="image-item" src="https://www.touropia.com/gfx/d/amazing-mud-brick-buildings/siwa_oasis.jpg" alt="Siwa Oasis" />
+                            <div id="wrapper">   <p class="caption"><a href="https://www.memphistours.com/Egypt/Egypt-Wikis/oases-and-the-western-desert/wiki/Siwa-Oasis"><p>Siwa Oasis</p></a>
+                            </div>
+                        </div>
+    
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img class="image-item" src="https://www.touropia.com/gfx/d/day-trips-from-cairo/saqqara.jpg" alt="8. Saqqara" />
+                            <div id="wrapper">   <p class="caption"><a href="https://egymonuments.gov.eg/en/archaeological-sites/saqqara"><p> Saqqara</p></a>
+                            </div>    
+                        </div>
+    
+                    </td>
+                    <td>
+                        <div>
+                            <img class="image-item" src="https://www.touropia.com/gfx/d/best-places-to-visit-in-egypt/alexandria.jpg" alt="Alexandria" />
+                         <div id="wrapper">   <p class="caption"><a href="https://www.memphistours.co.uk/Egypt/Egypt-Travel-Guide/Alexandria-Attractions/wiki/Alexandria-City-in-Egypt"><p>Alexandria</p></a>
+                         </div>
+                        </div>
+    
+                    </td><td>
+                        <div>
+                            <img class="image-item" src="https://www.touropia.com/gfx/d/best-places-to-visit-in-egypt/hurghada.jpg" alt=" Hurghada" />
+                          <div id="wrapper" >  <p class="caption"><a href="http://www.redsea.gov.eg/t/Hurghada/Hurghada(1.aspx">Hurghada</p></a></div> 
+                        </div>
+    
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+        <div id="third-section" class="section-two" ><h1 style="text-align: center;">Know me better!</h1>
+            <p class="section">I have always been fascinated by carnival rides. It amazes me that average, ordinary people eagerly trade in the serenity of the ground for the chance to be tossed through the air like vegetables in a food processor.
+                It amazes me that at some time in history someone thought that people would enjoy this, and that person invented what must have been the first of these terrifying machines. For me, it is precisely the thrill and excitement of having survived the ride that keeps me coming back for more.
+               My first experience with a carnival ride was a Ferris wheel at a local fair.
+            </p>
+               <p class="section">
+                 Looking at that looming monstrosity spinning the life out of its sardine-caged occupants, I was dumbstruck. It was huge, smoky, noisy and not a little intimidating. Ever since that initial impression became fossilized in my imagination many years ago, these rides have reminded me of mythical beasts, amazing dinosaurs carrying off their screaming passengers like sacrificial virgins. Even the droning sound of their engines brings to mind the great roar of a fire-breathing dragon with smoke spewing from its exhaust-pipe nostrils.
+                   The first ride on one of these fantastic beasts gave me an instant rush of adrenaline. As the death-defying ride started, a lump in my throat pulsed like a dislodged heart ready to walk the plank.
+              </p>
+            <p class="section"> As the ride gained speed, the resistance to gravity built up against my body until I was unable to move. An almost imperceptible pause as the wheel reached the top of its climb allowed my body to relax in a brief state of normalcy. Then there was an assault of stomach-turning weightlessness as the machine continued its rotation and I descended back toward the earth. A cymbal-like crash vibrated through the air as the wheel reached bottom, and much to my surprise I began to rise again.
+                  Each new rotation gave me more confidence in the churning machine. Every ascent left me elated that I had survived the previous death-defying fall.
+            </p> 
+           <p class="section"> When another nerve-wracking climb failed to follow the last exhilarating descent and the ride was over, I knew I was hooked. Physically and emotionally drained, I followed my fellow passengers down the clanging metal steps to reach the safety of my former footing. I had been spared, but only to have the opportunity to ride again.
+                   My fascination with these fantastic flights is deeply engrained in my soul. A trip on the wonderful Ferris wheel never fails to thrill me. Although I am becoming older and have less time, or less inclination, to play, the child-like thrill I have on a Ferris wheel continues with each and every ride.
+           </p>
+         </div>
+         <div id="forth-section" class="section-two"  style="background-color: lightblue;">
+            <h1 id="form-heading" style="text-align: center;"><b>wanna come on my next trip? CONTACTS ME</b></h1>
+
+            <form >
+            
+             <div id="input-wrapper" > 
+                <div  >
+                   <input class="input-box" type="text" name="Fullname" placeholder="Username"  >
+                </div>
+                <div >
+                   <input class="input-box" type="email" name="E-mail" placeholder="E-mail" >
+                </div>
+                <div>
+                    <input class="input-box" type="tel" name="CONTACTS Number" placeholder="CONTACTS Number">
+                </div>
+                
+                <input id="btn-submit" type="submit" value="submit">
+    
+             </div>
+                
+            </form>
+         </div>
+    </div>
+    </body>

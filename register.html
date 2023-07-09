@@ -1,0 +1,102 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>forms project</title>
+        <style>
+            form {
+                background-color: white;
+                border: 1px solid #ccc;
+                width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+
+            }
+            .social-icon{
+                Width: 50px;
+                height: 50px;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+            .input-box{
+                font-size: 18px;
+                padding-bottom: 12px;
+                margin-bottom: 36px;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                border-bottom: 1px solid #ccc;
+                width: 100%;
+            }
+            #form-heading {
+                       text-align: center;
+                       font-size: 24px ;
+                       padding-top: 56px;
+                       padding-bottom: 32px;
+                    }
+             #btn-submit{
+                        background-color:blue;
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        padding-left: 24px;
+                        padding-right: 24px;
+                        margin-bottom: 36px;
+                        font-size: 18px;
+                        border: none;
+                        color: #f2f6ff;
+                    }
+                   #input-wrapper{
+                    padding-top: 80px;
+                    padding-bottom:40px ;
+                    padding-left: 80px;
+                    padding-right: 80px;
+                    width:70%;
+                    text-align: center;
+                    border: 0 solid white;
+                   }
+                   #topbar{
+                  background-color: hwb(228 1% 57%);
+                  list-style: none;
+                  padding: 30px;
+                  justify-content: space-around;
+                  text-align: center ;
+                  font-style: white;
+               }
+                  .items {
+                display: inline;
+            }
+
+        </style>
+    </head>
+    <body style="background-color: lightblue; margin: 0; padding: 0px;">
+        <ul id="topbar">
+            <li class="items"><a href="final project.html">HOME</a></li>
+            <li class="items"><a href="places.html">TRIPS</a></li>
+            <li class="items"><a href="about.html">ABOUT</a></li>
+            <li class="items"><a href="register.html">CONTACTS</a></li>
+        </ul>
+        <h1 id="form-heading"><b>wanna come on my next trip? CONTACTS ME</b></h1>
+
+        <form >
+        
+         <div id="input-wrapper"> 
+            <div  >
+               <input class="input-box" type="text" name="Fullname" placeholder="Username"  >
+            </div>
+            <div >
+               <input class="input-box" type="email" name="E-mail" placeholder="E-mail" >
+            </div>
+            <div>
+                <input class="input-box" type="tel" name="CONTACTS Number" placeholder="CONTACTS Number">
+            </div>
+            
+            <input id="btn-submit" type="submit" value="submit">
+
+         </div>
+            
+        </form>
+    </body>
+</html>
